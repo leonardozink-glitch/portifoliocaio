@@ -7,4 +7,10 @@ function calcular() {
     nota2trim = Number(prompt("Digite a nota do segundo trimestre"));
 
     resultado = 180 - nota1trim + nota2trim;
+
+    if(resultado <= 0){
+        alert("Parabéns! Você está aprovado!")
+    } else {
+        alert("Você ainda precisa tirar " + resultado + "no terceiro trimestre")
+    }
 }
